@@ -1,0 +1,38 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="/css/contacts.css">
+</head>
+<%- include('../includes/nav.ejs') %>
+<main class="main-container">
+    <div class="contacts">
+        <h2 class="contacts-title">
+            Як нас знайти?
+        </h2>
+        <div class="phone">
+            Телефон:
+
+            <% phoneNumberList.forEach(function(phone){ %>
+            <a href="tel:<%= phone %>"><%= phone %>;</a>
+            <% }) %>
+
+        </div>
+
+        <div class="address">
+            Адреса:
+            <span>
+                <%= address %>
+            </span>
+        </div>
+
+        <div class="email">
+            Електронна пошта:
+            <a href="mailto:<%= email %>">
+                <%= email %>
+            </a>
+        </div>
+    </div>
+
+    <div class="maps-iframe-container">
+        <%- include('../includes/maps.ejs') %>
+    </div>
+</main>
+<%- include('../includes/end.ejs') %>

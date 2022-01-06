@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    box-sizing: content-box;
+    font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    margin: 0;
+}
+
+.main-container {
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: content-box;
+    min-height: calc(100vh - 173px);
+}
+
+footer {
+    position: relative;
+    width: 100%;
+    font-size: 12px;
+    background-color: #40a8e4;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}

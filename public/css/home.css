@@ -1,0 +1,72 @@
+.pets-background {
+    background-image: url("/white-dog.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 630px;
+    overflow: hidden;
+}
+
+.main-text-container {
+    width: 450px;
+    margin-left: 60%;
+    margin-top: 100px;
+    color: #696969;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 1270px) {
+    .main-text-container {
+        margin: 100px 40px 0 0;
+    }
+
+    .pets-background {
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .pets-background {
+        justify-content: center;
+    }
+
+    .main-text-container {
+        margin: auto;
+        color: white;
+        background-color: #80808087;
+        padding: 20px;
+    }
+
+    .pets-background {
+        justify-content: center;
+    }
+
+    .main-text-container > div {
+        flex-direction: column;
+        padding: 10px;
+    }
+}
+
+.main-text-container > div {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-text-container a {
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 16px;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 20px;
+    color: #ffffff;
+    border-color: #2086c2;
+    background-color: #40a8e4;
+}
+
+.main-text-container a:hover {
+    border-color: #1873a8;
+    background-color: #1873a8;
+}

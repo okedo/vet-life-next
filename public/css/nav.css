@@ -1,0 +1,134 @@
+.header-line {
+    background-color: #40a8e4;
+    min-height: 30px;
+    margin-bottom: -3px;
+}
+
+.navigation-menu {
+    height: 110px;
+}
+
+.header-line,
+.navigation-menu {
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-color: #e1e1e1;
+}
+
+.menu {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu .clinic-logo-container {
+    margin-left: 30px;
+}
+
+.menu .menu-buttons {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin: 0;
+}
+
+.menu-button {
+    list-style-type: none;
+    height: 100px;
+    border-left: solid 1px #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 15px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.menu-button:hover {
+    color: #2d2d2e;
+    background-color: #f5f5f5;
+    border-bottom: 2px solid #40a8e4;
+    margin-bottom: -2px;
+}
+.menu .menu-button:last-of-type {
+    border-right: solid 1px #e1e1e1;
+    margin-right: 30px;
+}
+
+.link-text {
+    display: block;
+    color: #b5b5b5;
+}
+
+.menu .sm-container {
+    margin-right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram-icon:hover {
+    filter: brightness(50%);
+}
+
+.mobile-menu {
+    display: none;
+    padding: 0;
+}
+
+.mobile-menu .link-text {
+    color: #696969;
+    font-weight: 600;
+}
+
+.mobile-menu .menu-buttons {
+    top: 20px;
+    padding: 5px;
+    background-color: #e1e1e138;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.mobile-menu .menu-buttons {
+    z-index: 1;
+    display: none;
+}
+
+.mobile-menu .sm-container {
+    height: 100px;
+    padding: 5px 15px;
+}
+
+.burger-icon {
+    filter: invert(42%) sepia(0%) saturate(1550%) hue-rotate(74deg) brightness(94%) contrast(83%);
+}
+
+.mobile-menu .menu-buttons .menu-button,
+.mobile-menu .sm-container {
+    background-color: #e1e1e1;
+    width: 73vw;
+    border: 1px solid #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+
+.visible {
+    display: block !important;
+}

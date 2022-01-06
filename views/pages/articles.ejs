@@ -1,0 +1,27 @@
+<%- include('../includes/head.ejs') %>
+    <link rel="stylesheet" href="/css/articles.css">
+    </head>
+    <%- include('../includes/nav.ejs') %>
+        <main class="main-container">
+            <h2>
+                Цікаві статті
+            </h2>
+
+            <section class="article-section">
+                <% if(articleList.length){ %>
+                        <% articleList.forEach(function(article){ %>
+                            <article>
+                                <h2>
+                                    <%- article.title %>
+                                </h2>
+                                <p>
+                                    <%- article.body %>
+                                </p>
+                            </article>
+                        <% }); %>
+                <% } else{ %>
+                    No articles
+                <% } %>
+            </section>
+        </main>
+        <%- include('../includes/end.ejs') %>

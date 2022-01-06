@@ -1,0 +1,51 @@
+.main-title {
+    text-align: center;
+    color: #696969;
+}
+
+section {
+    width: 80%;
+    padding: 10px 20px 40px 20px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: #e1e1e126;
+    border-radius: 0;
+}
+
+section article {
+    width: 43%;
+    display: inline-block;
+    text-align: center;
+    margin: 5px;
+}
+
+section article h3 {
+    color: #696969;
+}
+
+section article img {
+    width: 350px;
+    margin-bottom: 5px;
+}
+
+.service-description {
+    height: 130px;
+    color: #696969;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) { 
+    section article {
+        width: 80%;
+    }
+
+    section article img {
+        width: 90%;
+        margin-bottom: 5px;
+    }
+}
