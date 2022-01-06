@@ -1,4 +1,7 @@
 import { Module } from '@nestjs/common';
+import { GalleryController } from './gallery.controller';
 
-@Module({})
+@Module({
+  controllers: [GalleryController]
+})
 export class GalleryModule {}
