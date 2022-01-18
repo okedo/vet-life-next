@@ -6,6 +6,12 @@ export class StaffController {
   @Get()
   @Page('staff')
   getHello(): any {
-    return { pageTitle: 'Наш персонал' };
+    return {
+      pageTitle: 'Наш персонал',
+      metaTags: {
+        pageContent: 'Наш персонал.',
+        url: 'http://www.vet-life.site/staff'
+      }
+    };
   }
 }

@@ -8,6 +8,10 @@ export class ServicesController {
   public getServicesPage(): any {
     return {
       pageTitle: 'Послуги',
+      metaTags: {
+        pageContent: 'Ветеринарна клініка Vet Life Чернівці. Наші послуги.',
+        url: 'http://www.vet-life.site/services'
+      }
     };
   }
 }

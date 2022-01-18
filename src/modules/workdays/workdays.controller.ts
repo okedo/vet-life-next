@@ -6,6 +6,12 @@ export class WorkdaysController {
   @Get()
   @Page('workdays')
   getPage(): any {
-    return { pageTitle: 'Графік роботи' };
+    return {
+      pageTitle: 'Графік роботи',
+      metaTags: {
+        pageContent: 'Графік роботи Ветеринарної клініки Vet Life Чернівці',
+        url: 'http://www.vet-life.site/workdays'
+      }
+    };
   }
 }

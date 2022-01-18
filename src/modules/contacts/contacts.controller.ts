@@ -15,6 +15,10 @@ export class ContactsController {
       phoneNumberList,
       address,
       email,
+      metaTags: {
+        pageContent: 'Ветеринарна клініка Vet Life Чернівці. Наші контакти. +38 0661060107; +38 0681080109;',
+        url: 'http://www.vet-life.site/contacts'
+      }
     };
   }
 }
