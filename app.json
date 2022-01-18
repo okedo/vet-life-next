@@ -4,5 +4,5 @@
     "repository": "https://github.com/okedo/vet-life-next",
     "logo": "",
     "keywords": ["node", "nestjs", "heroku"],
-    "image": "heroku/nodejs"
+    "image": "heroku/node-function-buildpack"
   }
