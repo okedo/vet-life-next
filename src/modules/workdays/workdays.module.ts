@@ -2,6 +2,6 @@ import { Module } from '@nestjs/common';
 import { WorkdaysController } from './workdays.controller';
 
 @Module({
-  controllers: [WorkdaysController]
+  controllers: [WorkdaysController],
 })
 export class WorkdaysModule {}

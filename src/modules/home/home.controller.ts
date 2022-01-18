@@ -6,6 +6,6 @@ export class HomeController {
   @Get()
   @Page('home')
   getHello(): any {
-    return { pageTitle: 'Vet life' }
+    return { pageTitle: 'Vet life' };
   }
 }

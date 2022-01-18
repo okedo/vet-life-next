@@ -11,8 +11,17 @@ import { VetReactModule } from '../vet-react/vet-react.module';
 import { WorkdaysModule } from '../workdays/workdays.module';
 
 @Module({
-  imports: [ArticlesModule, ContactsModule, GalleryModule, ServicesModule, StaffModule, TherapyModule, VetReactModule, WorkdaysModule],
+  imports: [
+    ArticlesModule,
+    ContactsModule,
+    GalleryModule,
+    ServicesModule,
+    StaffModule,
+    TherapyModule,
+    VetReactModule,
+    WorkdaysModule,
+  ],
   controllers: [HomeController],
   providers: [],
 })
-export class HomeModule { }
+export class HomeModule {}

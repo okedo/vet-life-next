@@ -6,12 +6,10 @@ import { VetReactController } from './vet-react.controller';
 
 @Module({
   controllers: [VetReactController],
-  providers: [ClientService]
+  providers: [ClientService],
 })
 export class VetReactModule {
   configure(consumer: MiddlewareConsumer) {
-    consumer
-      .apply(ClientMiddleware)
-      .forRoutes(VetReactController);
+    consumer.apply(ClientMiddleware).forRoutes(VetReactController);
   }
 }

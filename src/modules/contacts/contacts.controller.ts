@@ -7,14 +7,14 @@ const email = 'the.vetlife.cv@gmail.com';
 
 @Controller('contacts')
 export class ContactsController {
-
-    @Get()
-    @Page('contacts') getContacts(): any {
-        return {
-            pageTitle: 'Контакти',
-            phoneNumberList,
-            address,
-            email
-        }
-    }
+  @Get()
+  @Page('contacts')
+  getContacts(): any {
+    return {
+      pageTitle: 'Контакти',
+      phoneNumberList,
+      address,
+      email,
+    };
+  }
 }

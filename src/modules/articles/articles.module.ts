@@ -5,6 +5,6 @@ import { ArticlesController } from './articles.controller';
 
 @Module({
   controllers: [ArticlesController],
-  imports: [HttpModule]
+  imports: [HttpModule],
 })
-export class ArticlesModule { }
+export class ArticlesModule {}
