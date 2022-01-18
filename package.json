@@ -7,7 +7,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "prebuild": "rimraf dist",
-    "build": "nest build && cd ./webapp/vet-life && npm run build",
+    "build": "npm install && nest build && cd ./webapp/vet-life && npm run build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
     "start": "npm run build && npm run start-prod",
     "start-dev": "nest start --watch",
