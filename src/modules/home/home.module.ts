@@ -1,6 +1,9 @@
+import { ConfigModule } from '@nestjs/config';
+
 import { Module } from '@nestjs/common';
 
 import { ArticlesModule } from '../articles/articles.module';
+import { AuthModule } from './../auth/auth.module';
 import { ContactsModule } from './../contacts/contacts.module';
 import { HomeController } from './home.controller';
 import { GalleryModule } from '../gallery/gallery.module';
@@ -12,7 +15,9 @@ import { WorkdaysModule } from '../workdays/workdays.module';
 
 @Module({
   imports: [
+  ConfigModule.forRoot(),
     ArticlesModule,
+    AuthModule,
     ContactsModule,
     GalleryModule,
     ServicesModule,
