@@ -7,7 +7,6 @@ export class ClientService {
   public async getApp() {
     const basePath = process.env.WEBAPP_BUILD_PATH || './dist/webapp';
     const filePath = path.resolve(path.join(basePath, 'index.html'));
-    console.log(filePath);
     return new Promise((resolve, reject) => {
       fs.readFile(
         filePath,

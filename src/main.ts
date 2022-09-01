@@ -15,18 +15,20 @@ async function bootstrap() {
   app.setBaseViewsDir(join(__dirname, '..', 'views'));
   app.setViewEngine('ejs');
 
-  const config = new DocumentBuilder()
-    .setTitle('Cats example')
-    .setDescription('The cats API description')
+  const port = configService.get('DEV_PORT');
+
+  
+  if(!process.env.PORT && port === '4000') {
+    const config = new DocumentBuilder()
+    .setTitle('Vet life API')
+    .setDescription('API details')
     .setVersion('1.0')
-    .addTag('cats')
+    .addTag('API')
     .build();
 
   const document = SwaggerModule.createDocument(app, config);
   SwaggerModule.setup('swagger', app, document);
-
-
-  const port = configService.get('DEV_PORT');
+  }
  
   await app.listen(process.env.PORT || port);
 }

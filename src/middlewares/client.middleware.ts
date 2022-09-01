@@ -7,7 +7,6 @@ import * as path from 'path';
 export class ClientMiddleware implements NestMiddleware {
   constructor() {}
   async use(req: Request, res: Response, next: () => void) {
-    console.log(req.path);
     if (/[^\\/]+\.[^\\/]+$/.test(req.path)) {
       const file = this.getAssetPath(req.path);
       res.sendFile(file, (err) => {
