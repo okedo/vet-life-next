@@ -4,7 +4,6 @@ import { Controller, Post, Req } from '@nestjs/common';
 export class AuthController {
     @Post()
     public login(@Req() request: any): any {
-        console.log(request);
-        return {};
+        return { success: true };
     }
 }
