@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import {addBaseUrl} from '../../helpers/BaseUrlHelper';
+import { addBaseUrl } from '../../helpers/BaseUrlHelper';
 
 function LoginForm() {
 
@@ -12,18 +12,20 @@ function LoginForm() {
     fetch(addBaseUrl('api/auth/login'), {
       method: "POST",
       body: JSON.stringify(payload)
+    }).then((res) => {
+      return res.json()
     }).then((data) => {
       console.log(data);
-    }).catch((err)=>{
+    }).catch((err) => {
       console.log(err);
     });
   }
 
   return (
     <div>
-      <input onChange={(event)=>setLogin(event.target.value)} id="login" type="text" name="login"></input>
+      <input onChange={(event) => setLogin(event.target.value)} id="login" type="text" name="login"></input>
       <label htmlFor="login">Login</label>
-      <input onChange={(event)=>setPassword(event.target.value)} id="password" type="password" name="password"></input>
+      <input onChange={(event) => setPassword(event.target.value)} id="password" type="password" name="password"></input>
       <label htmlFor="password">Password</label>
       <button onClick={submit}>Login</button>
     </div>
